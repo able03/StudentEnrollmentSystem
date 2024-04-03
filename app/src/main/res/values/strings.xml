@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">StudentEnrollmentSystem</string>
+    <!--  TODO: Remove or change this placeholder text  -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="courses">
+        <item>BSIT</item>
+        <item>BSCPE</item>
+        <item>BSA</item>
+    </string-array>
+</resources>

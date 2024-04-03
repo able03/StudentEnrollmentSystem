@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:padding="20dp"
+    tools:context=".fragments.HomeFragment"
+    android:scrollbars="none"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:elevation="10dp"
+            app:cardBackgroundColor="#D875C7"
+            app:cardCornerRadius="10dp"
+            app:cardMaxElevation="10dp">
+
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/course"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                app:cardCornerRadius="10dp"
+                app:cardBackgroundColor="#E9A89B"
+                android:elevation="10dp"
+                app:cardMaxElevation="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="BSIT"
+                        android:textColor="@color/black"
+                        android:textSize="24sp"
+                        android:textStyle="bold"
+                        android:id="@+id/tvBSIT"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Top Skills to Learn"
+                        android:textSize="18sp"
+                        android:textColor="@color/black"
+                        android:id="@+id/tvTopSkills"
+                        android:layout_below="@id/tvBSIT"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:id="@+id/tvDesc"
+                        android:layout_below="@id/tvTopSkills"
+                        android:text="Cloud Computing
+Data Science and Analytics
+Cybersecurity
+"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:background="#6b6aa2"
+                            android:padding="5dp"
+                            android:layout_below="@id/tvDesc"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="ENROLL NOW"
+                                android:textSize="10sp"
+                                android:id="@+id/tvEnrollNow"
+                                android:textColor="@color/white"
+                                android:layout_gravity="center"/>
+
+                        </LinearLayout>
+
+
+
+
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:layout_alignParentEnd="true"
+                app:cardCornerRadius="10dp"
+                android:elevation="10dp"
+                app:cardMaxElevation="10dp"
+                app:cardBackgroundColor="#E9A89B"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:layout_below="@id/course"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="10dp"
+                app:cardBackgroundColor="#E9A89B"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

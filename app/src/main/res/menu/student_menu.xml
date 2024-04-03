@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+<item
+        android:title="Home"
+        android:icon="@drawable/ic_home"
+        app:showAsAction="withText"
+        android:id="@+id/menu_homes"/>
+
+    <item
+        android:title="Subject"
+        android:icon="@drawable/ic_subjects"
+        app:showAsAction="withText"
+        android:id="@+id/menu_subject"/>
+
+    <item
+        android:title=""
+        app:showAsAction="withText"
+        android:id="@+id/menu_logo" />
+
+    <item
+        android:title="Teacher"
+        app:showAsAction="withText"
+        android:icon="@drawable/ic_teachers"
+        android:id="@+id/menu_teacher"/>
+
+    <item
+        android:title="Logout"
+        app:showAsAction="withText"
+        android:icon="@drawable/ic_logout"
+        android:id="@+id/menu_logout"/>
+
+
+</menu>
