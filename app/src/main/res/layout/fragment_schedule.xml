@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragments.ScheduleFragment"
     android:background="#f90"
     android:padding="20dp"
@@ -43,6 +44,15 @@
                     android:layout_height="wrap_content"
                     android:textSize="15sp"
                     android:text="Course:"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cornerRadius="5dp"
+                    android:text="View pdf schedule"
+                    android:id="@+id/btnViewPdfSched"
+                    android:layout_marginTop="40dp"
+                    android:visibility="gone"/>
 
 
             </LinearLayout>

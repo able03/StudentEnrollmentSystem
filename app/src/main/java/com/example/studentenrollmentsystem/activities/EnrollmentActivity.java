@@ -15,10 +15,8 @@ import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.example.studentenrollmentsystem.CoursesModel;
-import com.example.studentenrollmentsystem.CustomToast;
 import com.example.studentenrollmentsystem.DBHelper;
 import com.example.studentenrollmentsystem.R;
-import com.example.studentenrollmentsystem.StudentTestModel;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.chip.Chip;
 import com.google.android.material.chip.ChipGroup;
@@ -60,7 +58,7 @@ public class EnrollmentActivity extends AppCompatActivity {
 
     }
 
-    private void generatePdf(String studName, String course)
+    private void generatePdf(String fname, String lname, String studName, String course)
     {
 
 
@@ -68,7 +66,7 @@ public class EnrollmentActivity extends AppCompatActivity {
         try
 
         {
-            File pdfFile = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS), "student_schedule.pdf");
+            File pdfFile = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS), String.format("%s%s.pdf", lname,fname));
 
             PdfWriter writer = new PdfWriter(new FileOutputStream(pdfFile));
             com.itextpdf.kernel.pdf.PdfDocument pdfDocument = new com.itextpdf.kernel.pdf.PdfDocument(writer);
@@ -234,7 +232,7 @@ public class EnrollmentActivity extends AppCompatActivity {
                     String course = cursor1.getString(9);
 
                     setCourseData(course);
-                    generatePdf(studName, course);
+                    generatePdf(fname, lname, studName, course);
 
                 }
                 else

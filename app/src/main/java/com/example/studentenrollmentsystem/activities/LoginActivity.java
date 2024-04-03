@@ -44,15 +44,6 @@ public class LoginActivity extends AppCompatActivity
         setListeners();
         addTeacherAccount();
 
-        MaterialButton test = findViewById(R.id.btnTestPdf);
-        test.setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public void onClick(View v)
-            {
-
-            }
-        });
     }
 
     private void generatePdf()
